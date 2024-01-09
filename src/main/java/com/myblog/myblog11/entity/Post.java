@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Table(name = "posts")
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
+@Data //automatically create getters and setters
+@AllArgsConstructor // automatically constructor with argument with created
+@NoArgsConstructor // ti will create a default constructor
 public class Post {
 
     @Id
